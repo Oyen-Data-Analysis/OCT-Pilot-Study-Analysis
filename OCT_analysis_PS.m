@@ -44,6 +44,12 @@ SA_V_um_1=(SA_V_pixels*4)
 
 avg_pore_size_um=mean(pore_size)
 
+
+%Poresize code was adapted from
+%https://github.com/ArashRabbani/Porous_Material_101 and code is cited with
+%the following article: A. Rabbani, S. Jamshidi, S. Salehi, An automated simple algorithm for realistic pore network extraction from 
+% micro-tomography images, J Pet Sci Eng 123 (2014) 164–171. https://doi.org/10.1016/J.PETROL.2014.08.020.
+
 function [pore_size]=Main_pore_f(bw,FileName)
 
 bw2 = bw(1:200,1:200,1:150);
